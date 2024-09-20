@@ -17,6 +17,9 @@ sudo chmod u+x xampp-linux-x64-8.2.4-0-installer.run
 ``` bash
 sudo opt/lampp/xampp start
 ```
+```bash
+sudo /opt/lampp/manager-linux-x64.run
+```
 #### Mediante este comando se ejecutan los servicios de xampp, apache y php.
 
 #### Después del paso anterior, pondremos en el navegador localhost/phpmyadmin y nos saldrá lo siguiente:
