@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #e94e77;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #d43f6b;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ab8;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestión de usuarios</h1>
+    <h2>Insertar usuario</h2>
+    <form action="index3.php" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <br>
+        <input type="email" name="email" placeholder="email" required>
+        <br>
+        <input type="password" name="password" placeholder="password" required>
+        <button type="submit" name="insert">Crear usuario</button>
+    </form>
+
+    <h2>Mostrar usuarios</h2>
+    <form action="index3.php" method="post"><br>
+        <button type="submit" name="select" id="selectButton">Mostrar usuarios</button>
+    </form>
+
+    <h2>Actualizar usuario</h2>
+    <form action="index3.php" method="post">
+        <input type="number" name="userId" placeholder="User ID" required><br>
+        <input type="text" name="name" placeholder="Name" required>
+        <br>
+        <input type="email" name="email" placeholder="email" required>
+        <br>
+        <button type="submit" name="update">Actualizar usuario</button>
+    </form>
+
+    <h2>Borrar usuario</h2>
+    <form action="index3.php" method="post">
+        <input type="number" name="userId" placeholder="User ID" required>
+        <button type="submit" name="delete">Borrar usuario</button>
+    </form>
+</body>
+</html>
