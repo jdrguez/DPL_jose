@@ -42,7 +42,7 @@ if (isset($_POST['select'])) {
         while($row = $result->fetch_assoc()) {
             echo "ID: " . $row["id"]. " - Nombre: " . $row["name"]. " - Email: " . $row["email"]. "<br>";
         }
-        echo '<br><button onclick="window.location.href=\'index.html\'">Volver al administrador de consultas</button>';
+        echo '<br><button onclick="window.location.href=\'panel.html\'">Volver al administrador de consultas</button>';
     } else {
         echo "0 resultados";
     }
