@@ -90,7 +90,7 @@ SystemLog /var/log/proftpd/proftpd.log
 
 Y añadiremos las siguientes dos lineas:
 ```sh
-AccessGrantMSG “Bienvenido al servidor FTP de Jesús Lugo”
+AccessGrantMSG “Bienvenido al servidor FTP de José Domingo”
 AccessDenyMSG “Error de entrada a mi servidor FTP”
 ```
 
